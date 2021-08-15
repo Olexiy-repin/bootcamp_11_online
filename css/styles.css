@@ -62,13 +62,20 @@ body {
   border-radius: 25px;
   background-color: transparent;
   cursor: pointer;
-  /* color: #ffffff; */
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+}
+
+.modal-btn-theme-dark {
+  color: #ffffff;
+}
+
+.modal-btn-theme-light {
+  color: #303030;
 }
 
 .social-links {
@@ -104,6 +111,8 @@ body {
 }
 
 .suptitle {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -112,12 +121,28 @@ body {
   margin-bottom: 20px;
 }
 
+.suptitle::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+}
+
 .suptitle-theme-dark {
   color: rgba(157, 164, 189, 0.6);
 }
 
+.suptitle-theme-dark::before {
+  background-color: rgba(157, 164, 189, 0.6);
+}
+
 .suptitle-theme-light {
   color: #303030;
+}
+
+.suptitle-theme-light::before {
+  background-color: #303030;
 }
 
 .description {
@@ -145,10 +170,12 @@ body {
 
 .title-theme-dark {
   margin-bottom: 44px;
+  color: #ffffff;
 }
 
 .title-theme-light {
   margin-bottom: 20px;
+  color: #303030;
 }
 
 .social-list {
@@ -313,6 +340,12 @@ body {
 /* ============== END ABOUT ============== */
 
 /* ============== SERVICES ============== */
+.services {
+  background-color: #111319;
+  background-image: url("../images/services/bg.png");
+  background-size: cover;
+}
+
 .services-modal-btn {
   display: block;
   margin: 0 auto;
