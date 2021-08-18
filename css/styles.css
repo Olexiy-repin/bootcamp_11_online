@@ -407,10 +407,20 @@ body {
 .services-list-item {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .services-list-item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.services-list-item::before {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .services-list-name,
@@ -420,6 +430,10 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+
+.services-list-name {
+  order: -1;
 }
 /* ============== END SERVICES ============== */
 
@@ -663,6 +677,14 @@ body {
   border: 1px solid #303030;
   border-radius: 4px;
   padding-left: 42px;
+}
+
+.modal-form-input:focus:not(:placeholder-shown):valid {
+  border: 1px dashed green;
+}
+
+.modal-form-input:focus:not(:placeholder-shown):invalid {
+  border: 1px dashed red;
 }
 
 .modal-form-input:focus {
