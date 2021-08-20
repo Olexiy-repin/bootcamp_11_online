@@ -16,6 +16,11 @@
   overflow: hidden;
 }
 
+.social-links, .suptitle, .header-container {
+  display: flex;
+  align-items: center;
+}
+
 h1,
 h2,
 h3,
@@ -63,10 +68,10 @@ body {
 }
 
 .modal-btn {
-  padding: 12px 20px;
-  font-weight: 600;
   font-size: 12px;
+  font-weight: 600;
   line-height: 1.33;
+  padding: 12px 20px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   border: 1px solid var(--accent-color);
@@ -87,11 +92,6 @@ body {
 
 .modal-btn-theme-light {
   color: #303030;
-}
-
-.social-links {
-  display: flex;
-  align-items: center;
 }
 
 .social-links::before {
@@ -122,8 +122,6 @@ body {
 }
 
 .suptitle {
-  display: flex;
-  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -157,8 +155,8 @@ body {
 }
 
 .description {
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.67;
   letter-spacing: 0.02em;
 }
@@ -390,11 +388,6 @@ body {
   position: absolute;
   width: 100%;
   padding-top: 32px;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
 }
 
 .nav {

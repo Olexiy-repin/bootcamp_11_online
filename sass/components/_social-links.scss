@@ -1,6 +1,5 @@
 .social-links {
-  display: flex;
-  align-items: center;
+  @extend %align;
 
   &::before {
     display: block;
