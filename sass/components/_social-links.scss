@@ -1,6 +1,5 @@
 .social-links {
-  display: flex;
-  align-items: center;
+  @extend %align;
 
   &::before {
     display: block;
@@ -13,13 +12,13 @@
   }
 }
 
-.social-links-item {
+.social-links__item {
   &:not(:last-child) {
     margin-right: 40px;
   }
 }
 
-.social-links-link {
+.social-links__link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
